@@ -1,0 +1,10 @@
+- type: entity
+  name: HVR1 Hailstorm
+  parent: [ WeaponRevolverInspector, BaseContrabandTier3, BaseWeaponRevolver, BaseSecurityContraband ]
+  id: WeaponRevolverHailstorm
+  description: text
+  components:
+  - type: Sprite
+    sprite: _Gearstation/Objects/Weapons/Guns/Revolvers/hailstorm.rsi
+  - type: Clothing
+    sprite: _Gearstation/Objects/Weapons/Guns/Revolvers/hailstorm.rsi

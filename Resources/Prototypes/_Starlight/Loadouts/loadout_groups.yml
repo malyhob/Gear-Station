@@ -1271,6 +1271,7 @@
   loadouts:
   - InspectorBelt
   - ColdCaseBelt
+  - HailstormBelt # Gear - hailstorm
 
 - type: loadoutGroup
   id: BrigmedicHead
