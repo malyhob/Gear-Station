@@ -3,8 +3,8 @@ name: Update Changelog
 on:
   push:
     branches:
-      - Starlight
-      - starlight-dev
+      - Gear-Main
+      - Gear-Dev
 
 
 permissions:
