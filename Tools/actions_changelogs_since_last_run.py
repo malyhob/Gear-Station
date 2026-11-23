@@ -16,8 +16,9 @@ import sys
 import yaml
 import time
 
-DEBUG = False
-DEBUG_CHANGELOG_FILE_OLD = Path("Resources/Changelog/Old.yml")
+DEBUG = True
+COUNT_FAILS_DEBUG = False
+DEBUG_CHANGELOG_FILE_OLD = Path("Resources/Changelog/OldGear.yml")
 GITHUB_API_URL = os.environ.get("GITHUB_API_URL", "https://api.github.com")
 
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
@@ -102,7 +103,7 @@ def changelog_job_succeeded(sess: requests.Session, run: Any) -> bool:
     resp.raise_for_status()
     for job in resp.json().get("jobs", []):
         if job["name"] == CHANGELOG_JOB_NAME:
-            return job["status"] == "completed" and job["conclusion"] == "success"
+            return (job["status"] == "completed" and job["conclusion"] == "success") or COUNT_FAILS_DEBUG
     return False
 
 
