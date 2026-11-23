@@ -1,2 +1,23 @@
 Entries:
+- author: malyhob
+  changes:
+  - message: Added Gear changelog tab
+    type: Add
+  id: 1
+  time: '2026-11-23'
+- author: Saver310
+  changes:
+  - message: Added "grant deafed author fore" lobby art.
+    type: Add
+  id: 3401
+  time: '2026-11-22T15:46:19.000000+00:00'
+  url: https://github.com/gear-station/Gear-Station/pull/34
+- author: malyhob
+  changes:
+  - message: An unrecallable crew change shuttle is now called after 3 hours.
+    type: Add
+  id: 1201
+  time: '2026-11-14T17:49:04.000000+00:00'
+  url: https://github.com/gear-station/Gear-Station/pull/12
 Order: -1
+
