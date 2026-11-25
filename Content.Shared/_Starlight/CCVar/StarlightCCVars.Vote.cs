@@ -16,10 +16,10 @@ public sealed partial class StarlightCCVars
         CVarDef.Create("vote.show_preset_votes", false);
 
     public static readonly CVarDef<bool> ShowMapVotes =
-        CVarDef.Create("vote.show_map_votes", false);
+        CVarDef.Create("vote.show_map_votes", true);
 
     public static readonly CVarDef<bool> RunMapVoteAfterRestart =
-        CVarDef.Create("vote.run_map_vote_after_restart", false);
+        CVarDef.Create("vote.run_map_vote_after_restart", true);
 
     public static readonly CVarDef<bool> RunPresetVoteAfterRestart =
         CVarDef.Create("vote.run_preset_vote_after_restart", false);
@@ -34,7 +34,7 @@ public sealed partial class StarlightCCVars
         CVarDef.Create("vote.round_voting_count", 3);
 
     public static readonly CVarDef<string> MapVotingChancesPrototype =
-        CVarDef.Create("vote.map_voting_chances_prototype", "");
+        CVarDef.Create("vote.map_voting_chances_prototype", "GearBasic");
 
     public static readonly CVarDef<string> RoundVotingChancesPrototype =
         CVarDef.Create("vote.round_voting_chances_prototype", "Basic");
